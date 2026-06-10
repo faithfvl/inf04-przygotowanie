@@ -2,5 +2,5 @@
 
 Krótkie ściągi i notatki do szybkiego powtórzenia.
 
-- [sql-sciaga.md](sql-sciaga.md) – najważniejsze polecenia SQL
+- [INF04](notatka_ogolna.md) – notatka ogólna, powtarzająca cały zakres na egzamin teoretyczny
 - [oop-podstawy.md](oop-podstawy.md) – pojęcia programowania obiektowego
