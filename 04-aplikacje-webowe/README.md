@@ -1,5 +1,4 @@
-# 05 – Testowanie
+# 03 – Aplikacje desktopowe
 
-Materiały o testowaniu aplikacji.
+Tu będą trafiały zadania z zakresu aplikacji webowych potrzebnych na egzamin praktyczny
 
-Zobacz: [przyklad-testu.md](przyklad-testu.md)
