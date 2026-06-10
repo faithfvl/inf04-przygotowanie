@@ -24,8 +24,4 @@ Repozytorium z moimi materiałami, projektami i rozwiązaniami zadań przygotowu
 | `notatki/` | notatki i ściągi do nauki |
 
 ## Użyte technologie
-C# / .NET, MySQL  
-*(dopasuj do technologii, której uczycie się w szkole)*
-
-## Jak korzystać
-Każdy folder ma własny plik `README.md` z opisem zawartości. Postępy w nauce odhaczam na liście celów powyżej.
+C# / .NET MAUI / REACT.JS
