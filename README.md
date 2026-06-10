@@ -4,23 +4,20 @@ Repozytorium z moimi materiałami, projektami i rozwiązaniami zadań przygotowu
 
 ## Cele nauki
 - [ ] Podstawy języka programowania
-- [ ] Programowanie obiektowe (OOP)
-- [ ] Projektowanie i obsługa baz danych (SQL)
+- [ ] Programowanie obiektowe
 - [ ] Aplikacje okienkowe / webowe
 - [ ] Testy jednostkowe
-- [ ] UML i projektowanie aplikacji
+- [ ] Projektowanie aplikacji
 - [ ] Rozwiązanie arkuszy praktycznych
 
 ## Struktura repozytorium
 | Folder | Zawartość |
 |--------|-----------|
-| `01-podstawy-jezyka/` | podstawy: zmienne, pętle, funkcje |
-| `02-programowanie-obiektowe/` | klasy, dziedziczenie, przykłady OOP |
-| `03-bazy-danych/` | skrypty SQL, schemat bazy, diagram ERD |
-| `04-aplikacje/` | projekty aplikacji (desktop / web) |
-| `05-testowanie/` | testy jednostkowe i ich opis |
-| `06-uml-i-projektowanie/` | diagramy UML i projektowanie |
-| `arkusze-praktyczne/` | rozwiązane arkusze egzaminacyjne |
+| `01-notatki-teoria/` | zakres wiedzy potrzebny na egzamin teoretyczny |
+| `02-aplikacje-desktopowe/` | aplikacje konsolowe, maui, programowanie obiektowe |
+| `03-aplikacje-mobilne/` | interfejsy maui skonfigurowane pod telefony, logika w c# |
+| `04-aplikacje-webowe/` | aplikacje webowe, czyli react.js |
+| `arkusze-praktyczne/` | arkusze egzaminacyjne |
 | `notatki/` | notatki i ściągi do nauki |
 
 ## Użyte technologie
