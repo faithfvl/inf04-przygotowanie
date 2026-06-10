@@ -1,0 +1,442 @@
+.strona {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+}
+
+.hero {
+  margin-bottom: 56px;
+}
+
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--violet);
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.hero-podtytul {
+  margin-top: 14px;
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 48ch;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.hero-meta span {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.lista-cwiczen {
+  display: flex;
+  flex-direction: column;
+}
+
+.sekcja {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+}
+
+.sekcja-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sekcja-numer {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--violet);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--violet);
+  border-radius: 50%;
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+.sekcja-rail::after {
+  content: '';
+  flex: 1;
+  width: 2px;
+  background: var(--line);
+  margin: 8px 0;
+}
+
+.sekcja:last-child .sekcja-rail::after {
+  display: none;
+}
+
+.sekcja-body {
+  padding-bottom: 48px;
+  min-width: 0;
+}
+
+.sekcja-naglowek {
+  margin-bottom: 16px;
+}
+
+.sekcja-naglowek h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sekcja-opis {
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.sekcja-demo {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 1px 2px rgba(20, 24, 31, 0.04);
+}
+
+.btn {
+  border: none;
+  background: var(--violet);
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 9px 16px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, transform 0.05s;
+}
+
+.btn:hover {
+  background: var(--violet-dark);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 2px;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--violet);
+  border: 1.5px solid var(--line);
+}
+
+.btn-ghost:hover {
+  background: var(--violet-soft);
+  border-color: var(--violet);
+}
+
+.pole {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.pole label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+input {
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 9px 12px;
+  font-size: 0.95rem;
+  background: var(--paper);
+  color: var(--ink);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--violet);
+  background: var(--surface);
+}
+
+.status {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 999px;
+}
+
+.status-dostepny {
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.status-niedostepny {
+  color: var(--red);
+  background: var(--red-soft);
+}
+
+.rzad-etykiet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.etykieta {
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.etykieta-nowosc {
+  color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.etykieta-promocja {
+  color: var(--amber);
+  background: var(--amber-soft);
+}
+
+.wizytowka {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.wizytowka-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--violet);
+  color: #fff;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.wizytowka h3 {
+  font-size: 1.2rem;
+}
+
+.wizytowka-zawod {
+  color: var(--violet);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.wizytowka-rok {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.siatka {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.karta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+}
+
+.karta-gora {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.karta-gora h3 {
+  font-size: 1.05rem;
+}
+
+.karta-cena {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.tag-drogi {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--amber);
+  background: var(--amber-soft);
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profil-wiersz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.zakladki-pasek {
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tab-aktywna {
+  color: var(--violet);
+  border-bottom-color: var(--violet);
+}
+
+.lista {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lista li:last-child {
+  border-bottom: none;
+}
+
+.ocena {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 0.85rem;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+}
+
+.ocena-ok {
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.ocena-zla {
+  color: var(--red);
+  background: var(--red-soft);
+}
+
+.studenci-stopka {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.formularz p {
+  margin-top: 6px;
+}
+
+.wynik {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: var(--violet-soft);
+  border-radius: var(--radius-sm);
+}
+
+.wynik p {
+  margin: 2px 0;
+}
+
+.stopka {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .strona {
+    padding: 48px 16px 64px;
+  }
+  .siatka {
+    grid-template-columns: 1fr;
+  }
+  .sekcja {
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+  }
+  .sekcja-numer {
+    width: 34px;
+    height: 34px;
+    font-size: 0.78rem;
+  }
+  .sekcja-demo {
+    padding: 18px;
+  }
+}
